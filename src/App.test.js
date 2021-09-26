@@ -32,3 +32,11 @@ describe("Calcular total con estado", () => {
     expect(calcularTotalConEstado(2, 500, "UT")).toEqual(1066.5);
   });
 });
+
+import calcularTotalConEstadoYDescuento from "./App.js";
+
+describe("Calcular total con estado y descuento", () => {
+  it("deberia calcular el total con el impuesto por el estado y menos el descuento", () => {
+    expect(calcularTotalConEstadoYDescuento(2, 500, "UT")).toEqual(1036.5);
+  });
+});
