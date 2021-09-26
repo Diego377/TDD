@@ -40,3 +40,11 @@ describe("Calcular total con estado y descuento", () => {
     expect(calcularTotalConEstadoYDescuento(2, 500, "UT")).toEqual(1036.5);
   });
 });
+
+import calcularTotalConEstadoDescuentoYRegalo from "./App.js";
+
+describe("Calcular total con estado, descuento y regalo", () => {
+  it("deberia calcular el total con el impuesto por el estado, menos el descuento y con el precio del envoltorio", () => {
+    expect(calcularTotalConEstadoDescuentoYRegalo(2, 500, "UT",true)).toEqual(1041.5);
+  });
+});
