@@ -25,3 +25,10 @@ describe("Calcular total", () => {
   });
 });
 
+import calcularTotalConEstado from "./App.js";
+
+describe("Calcular total con estado", () => {
+  it("deberia calcular el total con el impuesto por el estado", () => {
+    expect(calcularTotalConEstado(2, 500, "UT")).toEqual(1066.5);
+  });
+});
